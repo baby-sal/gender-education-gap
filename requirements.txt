@@ -1,0 +1,9 @@
+Code runner for JS:
+formulahendry.code-runner
+
+Checks your code:
+dbaeumer.vscode-eslint
+
+Preview HTML files:
+george-alisson.html-preview-vscode
+
