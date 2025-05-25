@@ -1,12 +1,4 @@
-@import "tailwindcss";
-
-@font-face {
-    font-family: myFont;
-    src: url("StretchPro.otf") format("opentype");
-    font-display: swap;
-}
-
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -42,4 +34,4 @@ h1 {
     max-width: 1300px;
     margin: 20px;
     padding: auto;
-}
+} */

@@ -1,9 +1,10 @@
-@font-face {
-    font-family: 'myFont';
-    src: url('/path/to/StretchPro.otf') format('opentype');
-    font-display: swap;
-}
-
+@import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'myFont';
+    src: url('src/pages/StretchPro.otf') format('opentype');
+    font-display: swap;
+}

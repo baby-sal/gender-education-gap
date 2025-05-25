@@ -1,9 +1,9 @@
 module.exports = {
-    content: ["./pages/**/*.html"], // or your specific paths
+    content: ["./src/**/*.html"], // or your specific paths
     theme: {
         extend: {
             fontFamily: {
-                myFont: ['"myFont"', 'sans-serif'],
+                myFont: ['sans-serif'],
             },
             colors: {
                 brandPink: '#E83151',

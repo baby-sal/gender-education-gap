@@ -1,0 +1,45 @@
+/*! tailwindcss v4.1.7 | MIT License | https://tailwindcss.com */
+@font-face {
+  font-family: 'myFont';
+  src: url('src/pages/StretchPro.otf') format('opentype');
+  font-display: swap;
+}
+.sticky {
+  position: sticky;
+}
+.z-0 {
+  z-index: 0;
+}
+.z-10 {
+  z-index: 10;
+}
+.container {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.h-\[80px\] {
+  height: 80px;
+}
+.h-\[90px\] {
+  height: 90px;
+}
+.w-full {
+  width: 100%;
+}
+.max-w-\[1300px\] {
+  max-width: 1300px;
+}
+.flex-row {
+  flex-direction: row;
+}
+.items-start {
+  align-items: flex-start;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.text-\[1\.2em\] {
+  font-size: 1.2em;
+}
