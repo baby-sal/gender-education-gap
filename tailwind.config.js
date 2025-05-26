@@ -1,5 +1,7 @@
 module.exports = {
-    content: ["./src/**/*.html"], // or your specific paths
+    content: [
+        "./main/home.html"
+    ],
     theme: {
         extend: {
             fontFamily: {
