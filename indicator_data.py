@@ -1,6 +1,6 @@
 import requests 
+import configparser
 
-base_endpoint = "https://api.worldbank.org/v2/country/all/indicator/"
 
 """
 LIST OF INDICATORS AND ENDPOINTS 
@@ -13,16 +13,28 @@ literacy rate youth (15-24) gender disparity index SE.ADT.1524.LT.FM.ZS
 """
 
 
-def get_data(indicator:str, format_type = "json"): #format_type is a default argument 
-    #base_endpoint = "https://api.worldbank.org/v2/country/all/indicator/" 
-    endpoint = f"{base_endpoint}{indicator}?format={format_type}"
+# def get_data(indicator:str, format_type = "json"): #format_type is a default argument 
+#     #base_endpoint = "https://api.worldbank.org/v2/country/all/indicator/" 
+#     endpoint = f"{base_endpoint}{indicator}?format={format_type}"
 
-    response = requests.get(endpoint).json()
+#     response = requests.get(endpoint).json()
 
-    if response.status_code == 200:
-        print("success")
-    else:
-        print(f"fail: error code {response.status_code}")
+#     return response 
 
+# get_data("SE.ADT.1524.LT.FE.ZS")
 
 
+class WorldBankAPI:
+
+    def __init__(self):
+        config = configparser.ConfigParser()
+        #regardless of where this is ran, fine file path with congig.ini at the end 
+        config.read(os.path.direname(__file__) + "/config.ini") 
+    
+    def call_indicator(self):
+        base_endpoint = "https://api.worldbank.org/v2/country/all/indicator/"
+        endpoint = f"{base_endpoint}{self.indicator}?format={self.format_type}"
+
+        response = requests.get(endpoint).json()
+
+        return response
