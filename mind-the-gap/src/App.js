@@ -25,15 +25,15 @@ const Navigation = () => (
 const Home = () => (
   <div className='home'>
     <h2>Home</h2>
-    <p>Welcome to our website</p>
+    <p>Welcome to mind the gap.</p>
+    <img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' />
   </div>
 );
 
 const About = () => (
   <div className='about'>
     <h2>About Us</h2>
-    <p>Ipsum dolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias?</p>
-    <p>Ipsum dolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias?</p>
+    <p id='content'>Inspired by our journey as women in STEM we wanted to draw attention to the disparity in education between genders.</p>
   </div>
 );
 

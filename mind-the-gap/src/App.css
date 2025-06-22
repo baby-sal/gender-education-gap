@@ -11,7 +11,8 @@
     }
 
     .app {
-      width: 960px;
+      max-width: 1200px;
+      width: 90%;
       margin: 0 auto;
       padding: 20px;
     }
@@ -46,19 +47,37 @@
     }
 
     h1 {
-      margin-bottom: 20px;
       font-family: "Funnel Display", sans-serif;
+      font-weight: 800;
       text-align: center;
-      text-justify: center;
+      justify-content: center;
+      background-color: #EDC0C5;
+      color: #A50521;
+      width: 210px;
+      height: 45px;
+      margin: 0 auto;
     }
 
     h2,
     h3 {
       margin-bottom: 20px;
       font-family: "Funnel Display", sans-serif;
+      text-align: center;
     }
 
     p {
       margin-bottom: 15px;
       font-family: "Funnel Display", sans-serif;
+      white-space: normal;
+      overflow-wrap: break-word;
+      text-align: center;
+    }
+
+    #content {
+      width: 100%;
+      padding: 12px;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      /* Optional: For improved browser support */
+      white-space: normal;
     }
