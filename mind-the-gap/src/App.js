@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import { NavLink, Routes, Route } from 'react-router-dom';
@@ -18,30 +17,30 @@ const Navigation = () => (
     <ul>
       <li><NavLink to='/'>Home</NavLink></li>
       <li><NavLink to='/about'>About</NavLink></li>
-      <li><NavLink to='/contact'>Data</NavLink></li>
+      <li><NavLink to='/data'>Data</NavLink></li>
     </ul>
   </nav>
 );
 
 const Home = () => (
   <div className='home'>
-    <h1>Welcome to my portfolio website</h1>
-    <p> Feel free to browse around and learn more about me.</p>
+    <h2>Home</h2>
+    <p>Welcome to our website</p>
   </div>
 );
 
 const About = () => (
   <div className='about'>
-    <h1>About Me</h1>
+    <h2>About Us</h2>
     <p>Ipsum dolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias?</p>
     <p>Ipsum dolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias?</p>
   </div>
 );
 
-const Contact = () => (
-  <div className='contact'>
-    <h1>Contact Me</h1>
-    <p>You can reach me via email: <strong>hello@example.com</strong></p>
+const Data = () => (
+  <div className='data'>
+    <h2>Data</h2>
+    <p>Data be here</p>
   </div>
 );
 
@@ -51,6 +50,6 @@ const Main = () => (
   <Routes>
     <Route path='/' element={<Home />}></Route>
     <Route path='/about' element={<About />}></Route>
-    <Route path='/contact' element={<Contact />}></Route>
+    <Route path='/data' element={<Data />}></Route>
   </Routes>
 );
