@@ -17,7 +17,7 @@ const Navigation = () => (
     <ul>
       <li><NavLink to='/'>Home</NavLink></li>
       <li><NavLink to='/about'>About</NavLink></li>
-      <li><NavLink to='/data'>Data</NavLink></li>
+      <li><NavLink to='/contact'>Contact Us</NavLink></li>
     </ul>
   </nav>
 );
@@ -26,7 +26,12 @@ const Home = () => (
   <div className='home'>
     <h2>Home</h2>
     <p>Welcome to mind the gap.</p>
-    <img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' />
+    <div class="flex-grid">
+      <div class="col"><img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' /></div>
+      <div class="col"><img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' /></div>
+      <div class="col"><img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' /></div>
+      <div class="col"><img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' /></div>
+    </div>
   </div>
 );
 
@@ -37,10 +42,10 @@ const About = () => (
   </div>
 );
 
-const Data = () => (
-  <div className='data'>
-    <h2>Data</h2>
-    <p>Data be here</p>
+const Contact = () => (
+  <div className='contact'>
+    <h2>Contact Us</h2>
+    <p>Please</p>
   </div>
 );
 
@@ -50,6 +55,6 @@ const Main = () => (
   <Routes>
     <Route path='/' element={<Home />}></Route>
     <Route path='/about' element={<About />}></Route>
-    <Route path='/data' element={<Data />}></Route>
+    <Route path='/contact' element={<Contact />}></Route>
   </Routes>
 );

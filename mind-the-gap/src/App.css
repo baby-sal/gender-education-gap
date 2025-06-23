@@ -81,3 +81,15 @@
       /* Optional: For improved browser support */
       white-space: normal;
     }
+
+    .flex-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .col {
+      flex: 0 0 calc((100% - 4rem) / 5);
+      box-sizing: border-box;
+    }
