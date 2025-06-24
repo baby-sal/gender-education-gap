@@ -66,11 +66,43 @@
     }
 
     p {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       font-family: "Funnel Display", sans-serif;
       white-space: normal;
       overflow-wrap: break-word;
       text-align: center;
+    }
+
+
+    figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      /* margin: 20px; */
+      /* adjust as needed */
+    }
+
+    figure img {
+      display: block;
+    }
+
+    figcaption {
+      font-family: "Funnel Display", sans-serif;
+      font-size: 0.8rem;
+      text-align: center;
+      margin-left: 1.2rem;
+      margin-right: 1.2rem;
+    }
+
+    .f1 {
+      background-color: #FCF1A7;
+      color: #192A51;
+    }
+
+    .f2 {
+      background-color: #C7E8F3;
+      color: #192A51;
     }
 
     #content {
@@ -90,6 +122,6 @@
     }
 
     .col {
-      flex: 0 0 calc((100% - 4rem) / 5);
+      flex: 0 0 calc((100% - 4rem) / 4);
       box-sizing: border-box;
     }

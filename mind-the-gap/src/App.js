@@ -27,10 +27,12 @@ const Home = () => (
     <h2>Home</h2>
     <p>Welcome to mind the gap.</p>
     <div class="flex-grid">
-      <div class="col"><img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' /></div>
-      <div class="col"><img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' /></div>
-      <div class="col"><img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' /></div>
-      <div class="col"><img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' /></div>
+      <div class="col"><figure><img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' /> <figcaption class='f1'> This is data about women and girls and education and things of the matter and so on and so forth.</figcaption></figure></div>
+      <div class="col"><figure><img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' /> <figcaption class='f2'> This is data about women and girls and education and things of the matter and so on and so forth.</figcaption></figure></div>
+      <div class="col"><figure><img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' /> <figcaption class='f1'> This is data about women and girls and education and things of the matter and so on and so forth.</figcaption></figure></div>
+      <div class="col"><figure><img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' /> <figcaption class='f2'> This is data about women and girls and education and things of the matter and so on and so forth.</figcaption></figure></div>
+      <div class="col"><figure><img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' /> <figcaption class='f1'> This is data about women and girls and education and things of the matter and so on and so forth.</figcaption></figure></div>
+      <div class="col"><figure><img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' /> <figcaption class='f2'> This is data about women and girls and education and things of the matter and so on and so forth.</figcaption></figure></div>
     </div>
   </div>
 );
