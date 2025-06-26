@@ -68,11 +68,7 @@
     p {
       margin-bottom: 20px;
       font-family: "Funnel Display", sans-serif;
-      white-space: normal;
-      overflow-wrap: break-word;
-      text-align: center;
     }
-
 
     figure {
       display: flex;
@@ -105,14 +101,6 @@
       color: #192A51;
     }
 
-    #content {
-      width: 100%;
-      padding: 12px;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-      /* Optional: For improved browser support */
-      white-space: normal;
-    }
 
     .flex-grid {
       display: flex;
@@ -124,4 +112,30 @@
     .col {
       flex: 0 0 calc((100% - 4rem) / 4);
       box-sizing: border-box;
+    }
+
+    .homep {
+      white-space: normal;
+      overflow-wrap: break-word;
+      text-align: center;
+    }
+
+    .aboutp {
+      width: 100%;
+      padding: 12px;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      /* Optional: For improved browser support */
+      white-space: normal;
+    }
+
+    .contactp {
+      white-space: normal;
+      overflow-wrap: break-word;
+      text-align: center;
+    }
+
+    .avatar {
+      max-width: 12rem;
+      height: auto;
     }

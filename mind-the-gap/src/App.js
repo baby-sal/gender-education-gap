@@ -2,6 +2,8 @@ import './App.css';
 
 import { NavLink, Routes, Route } from 'react-router-dom';
 
+import sallyimage from './assets/sally.png'
+
 const App = () => (
   <div className='app'>
     <h1>Mind the gap</h1>
@@ -25,7 +27,7 @@ const Navigation = () => (
 const Home = () => (
   <div className='home'>
     <h2>Home</h2>
-    <p>Welcome to mind the gap.</p>
+    <p class='homep'>Welcome to mind the gap.</p>
     <div class="flex-grid">
       <div class="col"><figure><img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' /> <figcaption class='f1'> This is data about women and girls and education and things of the matter and so on and so forth.</figcaption></figure></div>
       <div class="col"><figure><img src='https://plus.maths.org/content/sites/plus.maths.org/files/articles/2022/square/square_web.png' alt='this will be data thumbnail' /> <figcaption class='f2'> This is data about women and girls and education and things of the matter and so on and so forth.</figcaption></figure></div>
@@ -40,14 +42,15 @@ const Home = () => (
 const About = () => (
   <div className='about'>
     <h2>About Us</h2>
-    <p id='content'>Inspired by our journey as women in STEM we wanted to draw attention to the disparity in education between genders.</p>
+    <img class='avatar' src={sallyimage} alt='sally' />
+    <p class='aboutp'>Inspired by our journey as women in STEM we wanted to draw attention to the disparity in education between genders.</p>
   </div>
 );
 
 const Contact = () => (
   <div className='contact'>
     <h2>Contact Us</h2>
-    <p>Please</p>
+    <p class='contactp'>Please</p>
   </div>
 );
 
