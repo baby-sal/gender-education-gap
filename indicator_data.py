@@ -4,28 +4,14 @@ import os
 
 
 """
-LIST OF INDICATORS AND ENDPOINTS 
+LIST OF INDICATORS AND ENDPOINTS
 
 literacy rate youth female (15-24) SE.ADT.1524.LT.FE.ZS
 literacy rate youth male (15-24) SE.ADT.1524.LT.MA.ZS
 literacy rate youth (15-24) gender disparity index SE.ADT.1524.LT.FM.ZS
 
 defualt indicator is CPIA gender equality rating (1=low to 6=high) 
-
-Config.ini file 
-[WORLDBANK]
-base_url = https://api.worldbank.org/v2/country/all/indicator/
-
-default_indicator = IQ.CPA.GNDR.XQ 
-lit_youth_female_endpoint = SE.ADT.1524.LT.FE.ZS
-lit_youth_m_endpoint = SE.ADT.1524.LT.MA.ZS
-lit_youth_gdi_endpoint = SE.ADT.1524.LT.FM.ZS
-
-
-
 """
-
-# MAYBE have class for URL builder and one for API interaction?  
 
 class EndpointBuilder:
 	#This is just to construct the URL and is independent of API- do not need to use config parser
@@ -40,7 +26,7 @@ class WorldBankAPI:
 
 	def __init__(self):
 		self.config = configparser.ConfigParser()
-		#regardless of where this is ran, find file path with congig.ini at the end 
+		#regardless of where this is ran, load the config.ini from the same directory as .py code 
 		self.config.read(os.path.dirname(__file__) + "/config.ini") 
 		self.base_url = self.config.get("WORLDBANK", "base_url")
 		self.default_indicator = self.config.get("WORLDBANK", "default_indicator")
