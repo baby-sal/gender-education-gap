@@ -3,6 +3,7 @@ import './App.css';
 import { NavLink, Routes, Route } from 'react-router-dom';
 
 import sallyimage from './assets/sally.png'
+import imanimage from './assets/iman.png'
 
 const App = () => (
   <div className='app'>
@@ -41,16 +42,31 @@ const Home = () => (
 
 const About = () => (
   <div className='about'>
+    <h2>About Mind The Gap</h2>
+    <p class='aboutp'>Inspired by our journey as women in STEM we wanted to draw attention to the disparity in education between genders. Inspired by our journey as women in STEM we wanted to draw attention to the disparity in education between genders. Inspired by our journey as women in STEM we wanted to draw attention to the disparity in education between genders. Inspired by our journey as women in STEM we wanted to draw attention to the disparity in education between genders. Inspired by our journey as women in STEM we wanted to draw attention to the disparity in education between genders.</p>
     <h2>About Us</h2>
-    <img class='avatar' src={sallyimage} alt='sally' />
-    <p class='aboutp'>Inspired by our journey as women in STEM we wanted to draw attention to the disparity in education between genders.</p>
-  </div>
+    <div class='avatars'>
+      <img class='avatar' src={imanimage} alt='iman' />
+      <img class='avatar' src={sallyimage} alt='sally' />
+    </div>
+    <div class='aboutuscols'>
+      <p class="aboutusp1"> We are Iman and Sally, we studied chemistry and software engineering. We are women in STEM.We are Iman and Sally, we studied chemistry and software engineering. We are women in STEM.We are Iman and Sally, we studied chemistry and software engineering. We are women in STEM.We are Iman and Sally, we studied chemistry and software engineering. We are women in STEM.We are Iman and Sally, we studied chemistry and software engineering. We are women in STEM.We are Iman and Sally, we studied chemistry and software engineering. We are women in STEM.</p>
+      <p class="aboutusp2"> We are Iman and Sally, we studied chemistry and software engineering. We are women in STEM.We are Iman and Sally, we studied chemistry and software engineering. We are women in STEM.We are Iman and Sally, we studied chemistry and software engineering. We are women in STEM.We are Iman and Sally, we studied chemistry and software engineering. We are women in STEM.We are Iman and Sally, we studied chemistry and software engineering. We are women in STEM.We are Iman and Sally, we studied chemistry and software engineering. We are women in STEM.</p>
+    </div>
+  </div >
 );
 
 const Contact = () => (
   <div className='contact'>
     <h2>Contact Us</h2>
     <p class='contactp'>Please</p>
+    <div class='container'>
+      <form action="action_page.php">
+
+
+
+      </form>
+    </div>
   </div>
 );
 

@@ -37,10 +37,15 @@
     }
 
     nav ul li a {
-      color: black;
+      color: #EDC0C5;
+      background-color: #A50521;
       text-decoration: none;
+      border: 5px;
+      border-radius: 5px;
       font-family: "Funnel Display", sans-serif;
     }
+
+    /* make into a dropdown */
 
     .current {
       border-bottom: 4px solid green;
@@ -125,8 +130,22 @@
       padding: 12px;
       word-wrap: break-word;
       overflow-wrap: break-word;
-      /* Optional: For improved browser support */
       white-space: normal;
+      justify-content: stretch;
+    }
+
+    .aboutuscols {
+      column-count: 2;
+      column-gap: 5em;
+      margin-top: 2em;
+    }
+
+    .aboutusp1 {
+      column-span: 1;
+    }
+
+    .aboutusp2 {
+      column-span: 2;
     }
 
     .contactp {
@@ -138,4 +157,11 @@
     .avatar {
       max-width: 12rem;
       height: auto;
+      border-radius: 50%;
+    }
+
+    .avatars {
+      display: flex;
+      justify-content: center;
+      gap: 25rem;
     }
